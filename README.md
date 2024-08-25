@@ -1,6 +1,6 @@
 # Hi, I'm Dasari Narada Rama Krishna Charan 👋
 
-🔗 [YouTube](https://www.youtube.com) · [LinkedIn](https://linkedin.com/in/dnrk-charan) · [GitHub](https://github.com/your-github) · [GeeksForGeeks](https://geeksforgeeks.org) · [HackerRank](https://hackerrank.com) · [Instagram](https://www.instagram.com)
+🔗 [YouTube](https://www.youtube.com) · [LinkedIn](https://linkedin.com/in/dnrk-charan) · [GitHub](https://github.com/dnrkcharan) · [Leetcode](https://leetcode.com/u/dnrkcharan/) · [Instagram](https://www.instagram.com/dnrk_charan/)
 
 ---
 
