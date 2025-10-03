@@ -12,7 +12,7 @@
 ---
 
 ## 🎓 Education
-- **Scaler – Data Science & Machine Learning Program (2024 – 2025)**  
+- **Scaler – Data Science & Machine Learning Program (2024 – Present)**  
   Hands-on program covering Python, EDA, ML/DL, NLP, RAG, Gen-AI, and deployment (LLMs).  
 
 - **National Institute of Technology, Andhra Pradesh (2018 – 2022)**  
