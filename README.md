@@ -1,85 +1,75 @@
 # Hi, I'm Dasari Narada Rama Krishna Charan 👋
 
-🔗 [YouTube](https://www.youtube.com) · [LinkedIn](https://linkedin.com/in/dnrk-charan) · [GitHub](https://github.com/dnrkcharan) · [Leetcode](https://leetcode.com/u/dnrkcharan/) · [Instagram](https://www.instagram.com/dnrk_charan/)
+🔗 [LinkedIn](https://linkedin.com/in/dnrk-charan) · [GitHub](https://github.com/dnrkcharan) · [LeetCode](https://leetcode.com/u/dnrkcharan/) · [YouTube](https://www.youtube.com) · [Instagram](https://www.instagram.com/dnrk_charan/)
 
 ---
 
 ## 📱 Contact Information
-- **Phone:** +91 9393936118
-- **Email:** [dnrkcharan@gmail.com](mailto:dnrkcharan@gmail.com)
-- **Location:** Hyderabad, Telangana, India
+- **Phone:** +91 9393936118  
+- **Email:** [dnrkcharan@gmail.com](mailto:dnrkcharan@gmail.com)  
+- **Location:** Hyderabad, Telangana, India  
 
 ---
 
 ## 🎓 Education
+- **Scaler – Data Science & Machine Learning Program (2024 – 2025)**  
+  Hands-on program covering Python, EDA, ML/DL, NLP, RAG, Gen-AI, and deployment (LLMs).  
 
-**National Institute of Technology, Andhra Pradesh (2018 - 2022)**  
-*Bachelor of Technology in Electrical and Electronics Engineering*  
-**CGPA:** 7.09/10
+- **National Institute of Technology, Andhra Pradesh (2018 – 2022)**  
+  *Bachelor of Technology in Electrical and Electronics Engineering*  
+  **CGPA:** 7.09/10  
 
 ---
 
 ## 💻 Technical Skills
-
-- **Programming Languages:** Python, SQL, HTML5, JavaScript, TypeScript
-- **Web Technologies:** Django, GraphQL, React, FastAPI, Peewee ORM, Outlook Graph API
-- **Database Management:** PostgreSQL, MySQL, Redis
-- **Automation:** Material-UI, Selenium, BeautifulSoup, Celery, Microsoft Power Automate
-- **Data Analysis:** Pandas, Numpy
-- **Deployment:** Docker, CI/CD Pipelines
+- **Programming:** Python, SQL, TypeScript, JavaScript, HTML5  
+- **Frameworks:** Django, React, FastAPI, GraphQL, Peewee ORM  
+- **Databases:** PostgreSQL, MySQL, Redis  
+- **Machine Learning:** Pandas, NumPy, Scikit-learn, NLP, Data Analysis  
+- **Automation:** Selenium, Celery, BeautifulSoup, Microsoft Power Automate  
+- **DevOps/Deployment:** Docker, CI/CD Pipelines, IIS Server, Excel Add-ins  
 
 ---
 
 ## 🚀 Professional Experience
 
 ### Software Engineer  
-**Golden Hills Capital** - Hyderabad, India  
-*Oct 2023 - Present*
+**Golden Hills Capital** – Hyderabad, India  
+*Oct 2023 – Present*  
+- Lead engineer on **MIDAS** – Next-gen equity IPO, Follow-on, and research platform integrating ML models, dashboards, and risk analysis.  
+- Built & deployed **Crypto Insights Platform** (screeners, news aggregation, portfolio tools) securely on IIS servers.  
+- Developed advanced screeners, portfolio dashboards, and Excel add-ins for CMG DataLab GraphQL API.  
+- Enhanced query-builder, reducing response time and improving analyst efficiency.  
 
-- Developed a comprehensive crypto insights platform integrating real-time news, analysis, and portfolio management.
-- Created an advanced screener tool for cryptocurrencies based on various factors.
-- Implemented a dynamic news dashboard to enhance user engagement.
-- Built user authentication and watchlist management features.
-- Developed portfolio management capabilities with comparative insights.
-- Led collaboration efforts with CMG engineers and designers, maintained documentation in Confluence and Jira.
-- Enhanced query-building features and created an Excel add-in for real-time data population.
-- Ensured secure user authentication and efficient session management.
-
-### Software Development Engineer - 1  
-**Cogoport** - Mumbai, India  
-*May 2022 - Sep 2023*
-
-- Led contributions in the cogo-ml repository, automating data processing and analysis.
-- Developed an ML-based automation system for freight data classification.
-- Automated data processing for over 10 lakh data points using cron jobs and Selenium.
-- Developed APIs with FastAPI for shipment tracking and rate optimization.
-- Integrated Outlook Mail API for enhanced email management within the platform.
-- Streamlined the admin dashboard and designed an email classification ML model.
+### Software Development Engineer - I  
+**Cogoport** – Mumbai, India  
+*May 2022 – Sep 2023*  
+- Spearheaded ML-based freight data automation, improving classification accuracy to 95% and saving 30+ analyst hours/week.  
+- Automated ingestion of **1M+ datapoints** via Selenium & cron.  
+- Integrated Outlook API for automated email parsing, reducing workload by 60%.  
+- Improved backend services and admin dashboard for shipment communications.  
 
 ---
 
 ## 🛠️ Projects
-
-### [Electric Vehicle Scheduling with Load Forecasting and Real-Time Pricing using Deep Learning (2022)](https://github.com/your-github)
-- Developed a GUI for EV users to schedule based on load forecasting and dynamic pricing.
-- Forecasted load at stations and scheduled EVs within limits.
-
-### [Student-Faculty Database Management (2021)](https://github.com/your-github)
-- Created a database for student and faculty information using MySQL and Python.
-- Developed an algorithm mapping student interests to faculty specializations.
+- **IPO/FO Return Prediction Models (2025):** Built ML models to predict T+1, T+7, and T+30 IPO/FO returns. Integrated into MIDAS with AI-driven forecasts on 200+ deals.  
+- **Crypto Insights Platform (2024):** Full-stack crypto screening & analytics platform with IIS deployment and Excel integrations.  
+- **Email Classification System (2023):** ML-based Outlook email classification system, automating 100K+ emails, reducing workload by 60%.  
+- **Electric Vehicle Scheduling (2022):** GUI + DL-based smart EV charging system, reduced peak load by 18%.  
+- **Student-Faculty Database (2021):** MySQL + Python system mapping students to faculty expertise.  
 
 ---
 
-## 🏆 Achievements & Extra-Curriculars
-
-- **Gold badge in HackerRank - Python, SQL**
-- **2nd Rank in Math Quest-2019**, an undergraduate level intercollegiate Mathematics Competition
+## 🏆 Achievements
+- **Gold Badge** – Python & SQL (HackerRank)  
+- **2nd Place** – Math Quest 2019 (Intercollegiate Competition)  
 
 ---
 
 ## 📜 Certifications
+- [Python for Everybody Specialization – University of Michigan (Coursera)](https://www.coursera.org/account/accomplishments/specialization/TAXKKPMR67UJ)  
+- [Machine Learning with Python – IBM (Coursera)](https://www.coursera.org/account/accomplishments/verify/Z5HMAFWSBNJF)  
+- [Machine Learning with Python – YHills (Certificate Link)](https://drive.google.com/file/d/1Gf2eF-l2ImIetO85yalxM-JrgkLoU_rk/view)  
+- [Introduction to HTML5 – Coursera](https://www.coursera.org/account/accomplishments/verify/JT2V7SHB2BCM)  
 
-- [Python for Everybody Specialization, University of Michigan - Coursera](https://www.coursera.org/account/accomplishments/specialization/TAXKKPMR67UJ)
-- [Machine Learning with Python, IBM - Coursera](https://www.coursera.org/account/accomplishments/verify/Z5HMAFWSBNJF)
-- [Machine Learning with Python - YHills](https://drive.google.com/file/d/1Gf2eF-l2ImIetO85yalxM-JrgkLoU_rk/view)
-- [Introduction to HTML5 - Coursera](https://www.coursera.org/account/accomplishments/verify/JT2V7SHB2BCM)
+---
