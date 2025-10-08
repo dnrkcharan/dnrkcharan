@@ -4,19 +4,43 @@ import { profile } from "../data/profile";
 export const Achievements = () => {
   return (
     <section id="achievements" className="section-container">
-      <div className="glass-panel">
-        <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Achievements</p>
-        <h2 className="mt-3 text-3xl font-bold text-white">Wins along the journey</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {profile.achievements.map((achievement) => (
-            <motion.div
-              key={achievement}
-              whileHover={{ scale: 1.02 }}
-              className="rounded-3xl border border-white/10 bg-white/5 p-5 text-sm text-white/80"
-            >
-              {achievement}
-            </motion.div>
-          ))}
+      <div className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-gradient-to-br from-white/5 via-charan-dark/70 to-charan-dark/90 p-8 lg:p-12">
+        <div className="absolute -top-24 left-0 h-48 w-48 rounded-full bg-charan-secondary/20 blur-3xl" />
+        <div className="absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-charan-accent/20 blur-3xl" />
+        <div className="relative">
+          <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Achievements</p>
+          <h2 className="mt-3 text-3xl font-bold text-white">Celebrating playful milestones</h2>
+          <p className="mt-3 max-w-2xl text-white/70">
+            Each win hints at the experimentation, grit and storytelling that power my build cycles.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {profile.achievements.map((achievement, index) => (
+              <motion.a
+                key={achievement.title}
+                href={achievement.link}
+                target="_blank"
+                rel="noreferrer"
+                whileHover={{ y: -4 }}
+                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5"
+              >
+                <div className="relative h-44 overflow-hidden">
+                  <img src={achievement.image} alt={`${achievement.title} artwork`} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charan-dark/80 via-charan-dark/30 to-transparent" />
+                  <span className="absolute right-5 top-5 text-xs uppercase tracking-[0.3em] text-white/80">
+                    {`Achievement 0${index + 1}`}
+                  </span>
+                </div>
+                <div className="space-y-3 p-6">
+                  <h3 className="text-lg font-semibold text-white">{achievement.title}</h3>
+                  <p className="text-sm text-white/75">{achievement.description}</p>
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-charan-accent transition group-hover:translate-x-1 group-hover:text-white">
+                    Peek details
+                    <span className="h-1 w-6 bg-gradient-to-r from-charan-accent to-charan-secondary" />
+                  </span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
