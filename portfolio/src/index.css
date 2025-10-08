@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(91, 124, 250, 0.4) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(91, 124, 250, 0.7), rgba(0, 245, 255, 0.7));
+  border-radius: 999px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 0% 0%, rgba(143, 103, 255, 0.22), transparent 35%),
+    radial-gradient(circle at 100% 0%, rgba(0, 245, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 50% 100%, rgba(91, 124, 250, 0.18), transparent 50%);
+  background-color: #05010a;
+}
+
+::selection {
+  background: rgba(0, 245, 255, 0.4);
+  color: #05010a;
+}
+
+.section-container {
+  @apply relative mx-auto w-full max-w-6xl px-6 py-20 lg:py-24;
+}
+
+.glass-panel {
+  @apply rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20 backdrop-blur-xl;
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #5b7cfa 0%, #8f67ff 45%, #00f5ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.neural-background {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='rgba(91,124,250,0.15)' stroke-width='0.8'%3E%3Cpath d='M0 40 Q200 0 400 40'/%3E%3Cpath d='M0 120 Q200 80 400 120'/%3E%3Cpath d='M0 200 Q200 160 400 200'/%3E%3Cpath d='M0 280 Q200 240 400 280'/%3E%3Cpath d='M0 360 Q200 320 400 360'/%3E%3C/g%3E%3Cg fill='none' stroke='rgba(0,245,255,0.12)' stroke-width='0.6'%3E%3Cpath d='M40 0 Q0 200 40 400'/%3E%3Cpath d='M120 0 Q80 200 120 400'/%3E%3Cpath d='M200 0 Q160 200 200 400'/%3E%3Cpath d='M280 0 Q240 200 280 400'/%3E%3Cpath d='M360 0 Q320 200 360 400'/%3E%3C/g%3E%3C/svg%3E");
+}
