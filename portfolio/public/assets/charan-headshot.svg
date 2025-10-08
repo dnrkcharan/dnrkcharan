@@ -1,0 +1,56 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1B2A" />
+      <stop offset="50%" stop-color="#102C4F" />
+      <stop offset="100%" stop-color="#091020" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="34%" r="45%">
+      <stop offset="0%" stop-color="#3D6BFF" stop-opacity="0.65" />
+      <stop offset="65%" stop-color="#2B4FB5" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#11234A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="suitGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#040814" />
+    </linearGradient>
+    <linearGradient id="shirtGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7FA4FF" />
+      <stop offset="100%" stop-color="#284070" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5AC8FA" />
+      <stop offset="100%" stop-color="#3465F5" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bgGradient)" rx="64" />
+  <rect x="80" y="110" width="740" height="820" rx="300" fill="url(#halo)" />
+  <ellipse cx="450" cy="260" rx="260" ry="120" fill="#3D6BFF" opacity="0.25" />
+  <g>
+    <path d="M450 540C568 540 660 630 660 758V860H240V758C240 630 332 540 450 540Z" fill="url(#suitGradient)" />
+    <path d="M450 552C522 552 580 610 580 684V828H320V684C320 610 378 552 450 552Z" fill="url(#shirtGradient)" />
+    <path d="M450 552C390 552 340 592 315 650L292 734L382 828H518L608 734L585 650C560 592 510 552 450 552Z" fill="url(#suitGradient)" />
+    <path d="M450 660L502 816H398L450 660Z" fill="url(#accentGradient)" />
+  </g>
+  <g>
+    <path d="M450 260C515 260 568 306 568 372C568 422 548 488 512 520C486 542 414 542 388 520C352 488 332 422 332 372C332 306 385 260 450 260Z" fill="#F2C9A4" />
+    <path d="M360 384C360 340 388 308 432 296C450 290 450 312 450 324C450 342 454 372 490 372C522 372 532 344 532 344C556 350 568 368 568 396C568 450 532 520 450 520C368 520 360 444 360 384Z" fill="#F4D2B4" />
+    <path d="M348 344C348 282 402 238 472 238C532 238 580 270 596 324C604 348 600 366 588 384C578 338 544 310 506 310C470 310 450 332 450 352C450 332 430 310 394 310C356 310 318 342 312 394C300 364 312 330 348 344Z" fill="#1A253D" />
+  </g>
+  <g stroke="#1F3B73" stroke-width="16" stroke-linecap="round">
+    <path d="M368 372C368 350 384 334 406 334C432 334 450 354 450 376" fill="none" />
+    <path d="M532 372C532 350 516 334 494 334C468 334 450 354 450 376" fill="none" />
+  </g>
+  <g stroke="#1F3B73" stroke-width="16" stroke-linecap="round">
+    <path d="M394 428C414 448 438 456 450 456C462 456 486 448 506 428" />
+  </g>
+  <path d="M394 422C410 438 430 446 450 446C470 446 490 438 506 422" stroke="#AA7248" stroke-width="10" stroke-linecap="round" />
+  <path d="M392 410H508" stroke="#AA7248" stroke-width="6" stroke-linecap="round" />
+  <g>
+    <path d="M308 820H592" stroke="#1E3A8A" stroke-width="18" stroke-linecap="round" opacity="0.55" />
+    <path d="M240 860H660" stroke="#1E3A8A" stroke-width="28" stroke-linecap="round" opacity="0.35" />
+  </g>
+  <text x="50%" y="990" fill="#D6E4FF" font-family="'Poppins', 'Segoe UI', sans-serif" font-weight="600" font-size="28" text-anchor="middle">
+    Dasari Narada Rama Krishna Charan
+  </text>
+</svg>
