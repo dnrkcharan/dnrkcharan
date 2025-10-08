@@ -1,0 +1,8 @@
+<svg width="320" height="120" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="120" rx="28" fill="#220A0A" />
+  <text x="50%" y="65" text-anchor="middle" fill="#F44336" font-family="'Poppins','Segoe UI',sans-serif" font-weight="700" font-size="54">
+    cogoport
+  </text>
+  <path d="M165 82C175 82 181 88 181 96C181 104 175 110 165 110C155 110 149 104 149 96C149 88 155 82 165 82Z" fill="#F44336" />
+  <path d="M149 96C149 88 155 82 165 82" stroke="#FCE6E6" stroke-width="6" stroke-linecap="round" />
+</svg>

@@ -3,6 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { profile } from "../data/profile";
 
 type SectionLink = {
   id: string;
@@ -22,34 +23,39 @@ export const FloatingNav: React.FC<Props> = ({ sections }) => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed top-6 left-1/2 z-40 hidden -translate-x-1/2 rounded-full border border-white/10 bg-white/10 px-6 py-3 backdrop-blur-2xl lg:flex"
+        className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-charan-dark/80 backdrop-blur-xl"
       >
-        <ul className="flex items-center gap-6 text-sm font-medium uppercase tracking-[0.2em] text-white/70">
-          {sections.map(({ id, label }) => (
-            <li key={id}>
-              <a
-                href={`#${id}`}
-                className="transition hover:text-white"
-              >
-                {label}
-              </a>
-            </li>
-          ))}
-          <li>
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a
+            href="#hero"
+            className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70 transition hover:text-white"
+          >
+            {profile.nickname}
+          </a>
+          <div className="hidden items-center gap-6 lg:flex">
+            <ul className="flex items-center gap-6 text-sm font-medium uppercase tracking-[0.2em] text-white/70">
+              {sections.map(({ id, label }) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    className="transition hover:text-white"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
             <ThemeToggle />
-          </li>
-        </ul>
+          </div>
+          <button
+            onClick={() => setOpen(true)}
+            className="flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-2 text-white transition hover:border-white/30 hover:bg-white/20 lg:hidden"
+          >
+            <span className="text-xs uppercase tracking-[0.35em]">Menu</span>
+            <Menu className="h-5 w-5" />
+          </button>
+        </div>
       </motion.nav>
-
-      <div className="fixed top-6 right-6 z-40 flex items-center gap-2 lg:hidden">
-        <ThemeToggle />
-        <button
-          onClick={() => setOpen(true)}
-          className="rounded-full border border-white/20 bg-white/10 p-2 text-white shadow-glow transition hover:border-white/40 hover:bg-white/20"
-        >
-          <Menu className="h-6 w-6" />
-        </button>
-      </div>
 
       <Transition show={open} as={Fragment}>
         <Dialog onClose={setOpen} className="relative z-50">
@@ -93,6 +99,9 @@ export const FloatingNav: React.FC<Props> = ({ sections }) => {
                       {label}
                     </a>
                   ))}
+                  <div className="flex justify-center pt-2">
+                    <ThemeToggle />
+                  </div>
                 </nav>
               </Dialog.Panel>
             </Transition.Child>

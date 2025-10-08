@@ -17,10 +17,17 @@ export const Education = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="rounded-3xl border border-white/10 bg-white/5 p-6"
             >
-              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold text-white">{edu.school}</h3>
-                  <p className="text-sm text-white/70">{edu.program}</p>
+              <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div className="flex items-center gap-4">
+                  {edu.logo && (
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/10">
+                      <img src={edu.logo} alt={edu.logoAlt} className="h-10 w-10 object-contain" />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">{edu.school}</h3>
+                    <p className="text-sm text-white/70">{edu.program}</p>
+                  </div>
                 </div>
                 <span className="text-xs uppercase tracking-[0.3em] text-white/50">{edu.period}</span>
               </div>
