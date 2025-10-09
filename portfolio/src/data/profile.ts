@@ -2,16 +2,16 @@ export const profile = {
   name: "Dasari Narada Rama Krishna Charan",
   nickname: "Charan",
   location: "Hyderabad, India",
-  tagline: "Full-stack engineer | Applied machine learning",
+  tagline: "Software Engineer • AI-driven platforms",
   summary:
-    "Software Engineer with 3+ years of experience in full-stack development and applied machine learning. Proven record of improving operational efficiency and delivering AI-driven insights while collaborating with product, research, and operations teams.",
+    "Software Engineer with 3+ years delivering MIDAS equity research workflows at Golden Hills Capital and ML-powered automation at Cogoport across FastAPI, Django, React, and Python.",
   resumeUrl: "/assets/charan-resume.pdf",
   photo: {
     src: "/assets/charan-headshot.svg",
     alt: "Stylised portrait of Dasari Narada Rama Krishna Charan in a blazer",
     caption: "Software engineer delivering ML-driven analytics"
   },
-  focusAreas: ["Full-stack", "Machine Learning", "Automation"],
+  focusAreas: ["Equity Platforms", "ML Automation", "Full-stack Delivery"],
   socials: [
     { label: "LinkedIn", href: "https://linkedin.com/in/dnrk-charan" },
     { label: "GitHub", href: "https://github.com/dnrkcharan" },
@@ -35,26 +35,26 @@ export const profile = {
     }
   ],
   aboutIntro:
-    "I build production-ready analytics platforms, automation pipelines, and ML models that help teams act on data with confidence.",
+    "Lead engineer on MIDAS at Golden Hills Capital, building equity IPO and research platforms that blend FastAPI, Django, React, and SQL dashboards.",
   aboutStory:
-    "At Golden Hills Capital, I lead MIDAS — a decision analytics system that serves equity and crypto research with dashboards, screeners, and reporting built on FastAPI, Django, React, and SQL.",
+    "Previously at Cogoport, drove ML automation for freight data, Selenium ingestion, and Outlook parsing that removed 30+ analyst hours every week.",
   aboutCuriosity:
     "Currently pursuing Scaler's Data Science & Machine Learning Program to sharpen advanced ML, NLP, RAG, and deployment skills.",
   aboutHighlights: [
     {
-      title: "Full-stack delivery",
+      title: "MIDAS equity workflows",
       description:
-        "Design, build, and ship features across FastAPI, Django, React, SQL, and Azure."
+        "Lead engineer on MIDAS – Next-gen equity IPO, Follow-on, and research platform integrating ML models, dashboards, and risk analysis."
     },
     {
-      title: "ML & analytics",
+      title: "Crypto insights platform",
       description:
-        "Develop forecasting, anomaly detection, and classification models with measurable accuracy gains."
+        "Built & deployed Crypto Insights Platform (screeners, news aggregation, portfolio tools) securely on IIS servers."
     },
     {
-      title: "Automation focus",
+      title: "Automation wins",
       description:
-        "Reduce manual workload with Excel add-ins, email parsing, and data ingestion pipelines."
+        "Developed advanced screeners, portfolio dashboards, Excel add-ins, and Outlook automations reducing manual effort."
     }
   ],
   aboutStats: [
@@ -84,12 +84,10 @@ export const profile = {
       logoAlt: "Golden Hills Capital logo",
       site: "https://goldenhills.in",
       achievements: [
-        "Designed Equity Insights workflow using Django, React, FastAPI, and SQL, integrating pricing, fundamentals, news, and risk metrics across 1K+ securities.",
-        "Developed MIDAS (Machine Intelligence Decision Analytics System) with dynamic dashboards, automation bots, and reporting for equities and crypto research desks.",
-        "Built advanced screeners with caching strategies, optimized queries, and technical indicator calculations reducing analyst turnaround by 40%.",
-        "Delivered crypto research platform with FastAPI, Celery, GraphQL, and Azure Functions, automating exchange and on-chain data ingestion plus Excel add-ins and IIS deployment.",
-        "Implemented CMG DataLab GraphQL Excel add-in enabling research model auto-population and automated refresh routines.",
-        "Partnered with finance stakeholders to productionize ML pipelines for forecasting and anomaly detection, improving research accuracy by 30%."
+        "Lead engineer on MIDAS – Next-gen equity IPO, Follow-on, and research platform integrating ML models, dashboards, and risk analysis.",
+        "Built & deployed Crypto Insights Platform (screeners, news aggregation, portfolio tools) securely on IIS servers.",
+        "Developed advanced screeners, portfolio dashboards, and Excel add-ins for CMG DataLab GraphQL API.",
+        "Enhanced query-builder, reducing response time and improving analyst efficiency."
       ],
       tech: ["FastAPI", "React", "GraphQL", "PostgreSQL", "Azure", "Docker"]
     },
@@ -102,27 +100,12 @@ export const profile = {
       logoAlt: "Cogoport logo",
       site: "https://www.cogoport.com",
       achievements: [
-        "Automated freight data classification with Python, SQL, and FastAPI achieving 95% accuracy and reducing manual labelling by 30+ hours each week.",
-        "Built Selenium-based scraping pipelines ingesting 1M+ shipment datapoints for analytics and reporting.",
-        "Integrated Outlook API for automated email parsing, cutting manual triage by 60% for operations teams.",
-        "Enhanced backend services and dashboards supporting shipment communication workflows and SLA tracking."
+        "Spearheaded ML-based freight data automation, improving classification accuracy to 95% and saving 30+ analyst hours/week.",
+        "Automated ingestion of 1M+ datapoints via Selenium & cron.",
+        "Integrated Outlook API for automated email parsing, reducing workload by 60%.",
+        "Improved backend services and admin dashboard for shipment communications."
       ],
       tech: ["Python", "Django", "Selenium", "PostgreSQL", "Azure Functions"]
-    },
-    {
-      company: "Cogoport",
-      role: "Machine Learning Engineer Intern",
-      period: "Sep 2021 – May 2022",
-      location: "Mumbai, India",
-      logo: "/assets/logos/cogoport-logo.svg",
-      logoAlt: "Cogoport logo",
-      site: "https://www.cogoport.com",
-      achievements: [
-        "Designed shipment delay prediction models using Python, scikit-learn, and Power BI, improving forecasting accuracy by 20%.",
-        "Created automated data extraction pipelines with BeautifulSoup, Selenium, and Azure Functions.",
-        "Developed Power BI dashboards for leadership teams to track KPIs and anomaly alerts."
-      ],
-      tech: ["Python", "scikit-learn", "Power BI", "Selenium", "Azure Functions"]
     }
   ],
   projects: [

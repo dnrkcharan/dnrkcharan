@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Toaster } from "react-hot-toast";
 import { Hero } from "./sections/Hero";
@@ -61,8 +61,16 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
+  const containerClass = useMemo(
+    () =>
+      `relative min-h-screen overflow-x-hidden transition-colors duration-500 ${
+        theme === "dark" ? "bg-charan-dark text-white" : "bg-charan-light text-charan-dark"
+      }`,
+    [theme]
+  );
+
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-charan-dark text-white">
+    <div className={containerClass}>
       <NeuralBackground />
       <FloatingNav sections={sections} />
       <AnimatePresence mode="wait">

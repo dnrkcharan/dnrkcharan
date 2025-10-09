@@ -13,18 +13,18 @@ const heroVariants = {
 
 export const Hero = () => {
   return (
-    <section id="hero" className="section-container pt-28 lg:pt-32">
-      <div className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-gradient-to-br from-white/5 via-charan-dark/70 to-charan-dark/90 p-8 lg:p-12">
-        <div className="absolute -top-32 -left-16 h-72 w-72 rounded-full bg-charan-primary/30 blur-3xl" />
-        <div className="absolute -bottom-40 -right-16 h-96 w-96 rounded-full bg-charan-secondary/20 blur-3xl" />
+    <section id="hero" className="section-container pt-28 lg:pt-36">
+      <div className="relative overflow-hidden rounded-[3rem] border border-charan-dark/10 bg-white/80 p-8 shadow-[0_30px_80px_rgba(5,1,10,0.12)] backdrop-blur-xl dark:border-white/10 dark:bg-gradient-to-br dark:from-white/5 dark:via-charan-dark/70 dark:to-charan-dark/90 lg:p-12">
+        <div className="absolute -top-32 -left-16 hidden h-72 w-72 rounded-full bg-charan-primary/30 blur-3xl dark:block" />
+        <div className="absolute -bottom-40 -right-16 hidden h-96 w-96 rounded-full bg-charan-secondary/20 blur-3xl dark:block" />
 
-        <div className="relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
             <motion.span
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-xs uppercase tracking-[0.4em] text-white/70"
+              className="inline-flex items-center gap-2 rounded-full border border-charan-dark/10 bg-white/70 px-5 py-2 text-xs uppercase tracking-[0.4em] text-charan-dark/70 dark:border-white/15 dark:bg-white/10 dark:text-white/70"
             >
               Software Engineer
               <span className="flex h-2 w-2 animate-pulse rounded-full bg-charan-accent" />
@@ -34,7 +34,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-4xl font-black leading-tight text-charan-dark sm:text-5xl lg:text-6xl dark:text-white"
             >
               Dasari Narada Rama Krishna <span className="text-charan-accent">Charan</span>
             </motion.h1>
@@ -43,7 +43,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-              className="max-w-2xl text-lg text-white/75 sm:text-xl"
+              className="max-w-2xl text-lg text-charan-dark/70 sm:text-xl dark:text-white/75"
             >
               {profile.summary}
             </motion.p>
@@ -52,7 +52,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="flex flex-wrap items-center gap-4 text-white/70"
+              className="flex flex-wrap items-center gap-4 text-charan-dark/60 dark:text-white/70"
             >
               <span className="flex items-center gap-2 text-sm">
                 <MapPin className="h-4 w-4 text-charan-accent" />
@@ -63,7 +63,7 @@ export const Hero = () => {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm transition hover:border-white/40 hover:bg-white/20"
+                    className="flex items-center gap-2 rounded-full border border-charan-dark/10 bg-white/70 px-4 py-2 text-sm transition hover:border-charan-primary/40 hover:text-charan-primary dark:border-white/15 dark:bg-white/10 dark:text-white/80 dark:hover:border-white/40 dark:hover:text-white"
                   >
                     {social.label === "LinkedIn" && <Linkedin className="h-4 w-4" />}
                     {social.label === "GitHub" && <Github className="h-4 w-4" />}
@@ -83,7 +83,7 @@ export const Hero = () => {
               {profile.focusAreas.map((area) => (
                 <span
                   key={area}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-white/70"
+                  className="rounded-full border border-charan-dark/10 bg-white/70 px-4 py-2 text-xs uppercase tracking-[0.3em] text-charan-dark/70 dark:border-white/10 dark:bg-white/5 dark:text-white/70"
                 >
                   {area}
                 </span>
@@ -105,7 +105,7 @@ export const Hero = () => {
               </a>
               <a
                 href="#projects"
-                className="flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-base font-semibold text-white/80 transition hover:border-white/40 hover:text-white"
+                className="flex items-center gap-3 rounded-full border border-charan-dark/10 bg-white/70 px-6 py-3 text-base font-semibold text-charan-dark/70 transition hover:border-charan-primary/40 hover:text-charan-primary dark:border-white/20 dark:bg-white/5 dark:text-white/80 dark:hover:border-white/40 dark:hover:text-white"
               >
                 Explore Projects
               </a>
@@ -118,36 +118,35 @@ export const Hero = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
             className="relative flex justify-center"
           >
-            <div className="relative w-full max-w-[420px]">
-              <div className="absolute -inset-8 rounded-[3rem] bg-gradient-to-br from-charan-primary/30 via-charan-secondary/20 to-charan-accent/30 blur-2xl" />
-              <div className="relative overflow-hidden rounded-[3rem] border border-white/15 bg-charan-dark/60 p-4 shadow-2xl backdrop-blur">
-                <div className="rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-white/5 via-charan-dark/60 to-charan-dark/80 p-4">
-                  <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-charan-dark/70">
+            <div className="relative w-full max-w-[420px] space-y-6">
+              <div className="relative overflow-hidden rounded-[3rem] border border-charan-dark/10 bg-white p-4 shadow-[0_25px_60px_rgba(5,1,10,0.1)] dark:border-white/15 dark:bg-charan-dark/60 dark:shadow-[0_25px_60px_rgba(5,1,10,0.45)]">
+                <div className="rounded-[2.5rem] border border-charan-dark/10 bg-white p-4 dark:border-white/10 dark:bg-gradient-to-br dark:from-white/5 dark:via-charan-dark/60 dark:to-charan-dark/80">
+                  <div className="overflow-hidden rounded-[2rem] border border-charan-dark/10 bg-charan-light/60 dark:border-white/10 dark:bg-charan-dark/70">
                     <img src={profile.photo.src} alt={profile.photo.alt} className="h-full w-full object-cover" />
                   </div>
                 </div>
-                <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs text-white/70">
+                <div className="mt-4 flex items-center justify-between rounded-2xl border border-charan-dark/10 bg-white/80 px-4 py-3 text-xs text-charan-dark/70 dark:border-white/10 dark:bg-white/5 dark:text-white/70">
                   <span>{profile.photo.caption}</span>
                   <span className="text-[10px] uppercase tracking-[0.4em] text-charan-accent">AI-native</span>
                 </div>
               </div>
-            </div>
 
-            <div className="absolute -bottom-10 left-1/2 w-full max-w-xs -translate-x-1/2 space-y-3 rounded-3xl border border-white/10 bg-white/10 p-4 text-xs text-white/70 backdrop-blur">
-              {profile.heroHighlights.map((highlight, index) => (
-                <motion.div
-                  key={highlight.title}
-                  custom={index}
-                  initial="hidden"
-                  animate="visible"
-                  variants={heroVariants}
-                  className="rounded-2xl bg-charan-dark/70 p-3 shadow-inner-glow"
-                >
-                  <p className="text-[10px] uppercase tracking-[0.4em] text-charan-accent">{highlight.accent}</p>
-                  <p className="mt-1 text-sm font-semibold text-white">{highlight.title}</p>
-                  <p className="text-xs text-white/70">{highlight.description}</p>
-                </motion.div>
-              ))}
+              <div className="grid gap-4 sm:grid-cols-3">
+                {profile.heroHighlights.map((highlight, index) => (
+                  <motion.div
+                    key={highlight.title}
+                    custom={index}
+                    initial="hidden"
+                    animate="visible"
+                    variants={heroVariants}
+                    className="rounded-2xl border border-charan-dark/10 bg-white/80 p-4 text-left shadow-[0_12px_32px_rgba(5,1,10,0.08)] dark:border-white/10 dark:bg-charan-dark/60 dark:text-white"
+                  >
+                    <p className="text-[10px] uppercase tracking-[0.4em] text-charan-accent">{highlight.accent}</p>
+                    <p className="mt-2 text-sm font-semibold text-charan-dark dark:text-white">{highlight.title}</p>
+                    <p className="mt-1 text-xs text-charan-dark/70 dark:text-white/70">{highlight.description}</p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

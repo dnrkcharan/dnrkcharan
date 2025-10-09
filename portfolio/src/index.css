@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
   color-scheme: dark;
 }
 
@@ -26,14 +30,21 @@
 
 body {
   min-height: 100vh;
+  background-color: #f5f7ff;
+  color: #05010a;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+:root[data-theme='dark'] body {
   background-image: radial-gradient(circle at 0% 0%, rgba(143, 103, 255, 0.22), transparent 35%),
     radial-gradient(circle at 100% 0%, rgba(0, 245, 255, 0.2), transparent 45%),
     radial-gradient(circle at 50% 100%, rgba(91, 124, 250, 0.18), transparent 50%);
   background-color: #05010a;
+  color: #ffffff;
 }
 
 ::selection {
-  background: rgba(0, 245, 255, 0.4);
+  background: rgba(0, 245, 255, 0.35);
   color: #05010a;
 }
 
@@ -42,7 +53,11 @@ body {
 }
 
 .glass-panel {
-  @apply rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20 backdrop-blur-xl;
+  @apply rounded-3xl border border-charan-dark/10 bg-white/80 p-8 shadow-xl shadow-charan-dark/10 backdrop-blur-xl;
+}
+
+:root[data-theme='dark'] .glass-panel {
+  @apply border-white/10 bg-white/5 shadow-black/20;
 }
 
 .gradient-text {
