@@ -4,7 +4,7 @@ import { profile } from "../data/profile";
 
 export const About = () => {
   const typedText = useTypewriter(
-    "Turning wild financial data into playful AI co-pilots for humans.",
+    "Focused on ML automation, analytics platforms, and reliable engineering.",
     35
   );
 
@@ -17,9 +17,9 @@ export const About = () => {
         <div className="relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div className="space-y-6">
             <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">About</p>
-            <h2 className="text-3xl font-bold text-white lg:text-4xl">Charan in 90 seconds</h2>
+            <h2 className="text-3xl font-bold text-white lg:text-4xl">Professional snapshot</h2>
             <p className="max-w-2xl text-base leading-relaxed text-white/85">{profile.aboutIntro}</p>
-            <p className="max-w-2xl text-base leading-relaxed text-white/70">{profile.aboutStory}</p>
+            <p className="max-w-2xl text-base leading-relaxed text-white/75">{profile.aboutStory}</p>
 
             <motion.p
               className="rounded-3xl border border-charan-accent/20 bg-charan-accent/10 p-5 text-lg font-semibold text-charan-accent"
@@ -41,7 +41,7 @@ export const About = () => {
                   transition={{ duration: 0.5, delay: index * 0.08 }}
                   className="rounded-3xl border border-white/10 bg-white/5 p-5"
                 >
-                  <p className="text-xs uppercase tracking-[0.35em] text-charan-accent">{`Mode ${index + 1}`}</p>
+                  <p className="text-xs uppercase tracking-[0.35em] text-charan-accent">{`Focus ${index + 1}`}</p>
                   <h3 className="mt-2 text-lg font-semibold text-white">{highlight.title}</h3>
                   <p className="mt-2 text-sm text-white/75">{highlight.description}</p>
                 </motion.div>
@@ -71,7 +71,7 @@ export const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="rounded-3xl border border-white/10 bg-white/5 p-6"
             >
-              <p className="text-sm uppercase tracking-[0.3em] text-white/50">Curiosity fuel</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">Currently learning</p>
               <p className="mt-3 text-base text-white/80">{profile.aboutCuriosity}</p>
             </motion.div>
           </div>

@@ -2,16 +2,16 @@ export const profile = {
   name: "Dasari Narada Rama Krishna Charan",
   nickname: "Charan",
   location: "Hyderabad, India",
-  tagline: "Turning Code into Intelligence",
+  tagline: "Full-stack engineer | Applied machine learning",
   summary:
-    "AI-native engineer who architects delightful intelligence for finance. I blend quant research, machine learning and product thinking to turn messy datasets into cinematic experiences for analysts and executives.",
+    "Software Engineer with 3+ years of experience in full-stack development and applied machine learning. Proven record of improving operational efficiency and delivering AI-driven insights while collaborating with product, research, and operations teams.",
   resumeUrl: "/assets/charan-resume.pdf",
   photo: {
     src: "/assets/charan-headshot.svg",
     alt: "Stylised portrait of Dasari Narada Rama Krishna Charan in a blazer",
-    caption: "AI-first engineer turning data into decisive stories"
+    caption: "Software engineer delivering ML-driven analytics"
   },
-  focusAreas: ["AI/ML", "Full-stack", "Data Science"],
+  focusAreas: ["Full-stack", "Machine Learning", "Automation"],
   socials: [
     { label: "LinkedIn", href: "https://linkedin.com/in/dnrk-charan" },
     { label: "GitHub", href: "https://github.com/dnrkcharan" },
@@ -20,58 +20,58 @@ export const profile = {
   heroHighlights: [
     {
       title: "3+ years",
-      description: "Designing AI-first systems for research desks & trading ops",
+      description: "Full-stack and machine learning experience",
       accent: "Experience"
     },
     {
-      title: "200M+ datapoints",
-      description: "Pipelines orchestrated across equities, derivatives & crypto",
-      accent: "Data"
+      title: "1K+ securities",
+      description: "Equity research coverage automated in MIDAS",
+      accent: "Coverage"
     },
     {
-      title: "5x efficiency",
-      description: "Automation boosts across IPO analytics & logistics intelligence",
+      title: "95% accuracy",
+      description: "ML-powered freight data classification at Cogoport",
       accent: "Impact"
     }
   ],
   aboutIntro:
-    "I build AI co-pilots that feel like cheat codes for market teams — fast, friendly and a little bit rebellious.",
+    "I build production-ready analytics platforms, automation pipelines, and ML models that help teams act on data with confidence.",
   aboutStory:
-    "Mixing quant research with product instincts, I compress sprawling equity signals into playful journeys that analysts can interrogate in seconds.",
+    "At Golden Hills Capital, I lead MIDAS — a decision analytics system that serves equity and crypto research with dashboards, screeners, and reporting built on FastAPI, Django, React, and SQL.",
   aboutCuriosity:
-    "Powered by filter coffee, midnight synthwave and a curiosity for how humans riff with machines.",
+    "Currently pursuing Scaler's Data Science & Machine Learning Program to sharpen advanced ML, NLP, RAG, and deployment skills.",
   aboutHighlights: [
     {
-      title: "Narrative-first engineer",
+      title: "Full-stack delivery",
       description:
-        "Wrap heavy quant models in story-led UI so every click feels like unlocking a secret level."
+        "Design, build, and ship features across FastAPI, Django, React, SQL, and Azure."
     },
     {
-      title: "Financial systems whisperer",
+      title: "ML & analytics",
       description:
-        "Fuse quant screens, P&L analytics and auto-reporting into one seamless loop for busy desks."
+        "Develop forecasting, anomaly detection, and classification models with measurable accuracy gains."
     },
     {
-      title: "Automation artist",
+      title: "Automation focus",
       description:
-        "Ship bots, Excel add-ins and workflows that hand back deep work time to analysts."
+        "Reduce manual workload with Excel add-ins, email parsing, and data ingestion pipelines."
     }
   ],
   aboutStats: [
     {
       value: "3+",
-      label: "Years shipping AI experiences",
-      subtext: "Finance, logistics, energy & analytics"
+      label: "Years in software engineering",
+      subtext: "Golden Hills Capital • Cogoport"
     },
     {
-      value: "200M+",
-      label: "Data points orchestrated",
-      subtext: "Across equities, derivatives & freight"
+      value: "40%",
+      label: "Faster analyst turnaround",
+      subtext: "Via MIDAS screeners and dashboards"
     },
     {
-      value: "10+",
-      label: "Production ML pipelines",
-      subtext: "Forecasting, NLP, anomaly detection"
+      value: "95%",
+      label: "Classification accuracy",
+      subtext: "Freight data automation at Cogoport"
     }
   ],
   experiences: [
@@ -84,12 +84,12 @@ export const profile = {
       logoAlt: "Golden Hills Capital logo",
       site: "https://goldenhills.in",
       achievements: [
-        "Built advanced equity screeners covering 1K+ securities across technical, fundamental and risk parameters, elevating analyst throughput by 40%",
-        "Optimized dynamic query builder and caching strategies reducing response latency by 40%",
-        "Designed real-time portfolio dashboards, P&L heatmaps and comparative analytics for market intelligence",
-        "Delivered crypto insights platform with FastAPI backend, Excel integrations and secure IIS deployment",
-        "Created Excel add-in for CMG DataLab GraphQL API enabling research model auto-population",
-        "Collaborated with finance teams to productionize ML pipelines and reporting tools"
+        "Designed Equity Insights workflow using Django, React, FastAPI, and SQL, integrating pricing, fundamentals, news, and risk metrics across 1K+ securities.",
+        "Developed MIDAS (Machine Intelligence Decision Analytics System) with dynamic dashboards, automation bots, and reporting for equities and crypto research desks.",
+        "Built advanced screeners with caching strategies, optimized queries, and technical indicator calculations reducing analyst turnaround by 40%.",
+        "Delivered crypto research platform with FastAPI, Celery, GraphQL, and Azure Functions, automating exchange and on-chain data ingestion plus Excel add-ins and IIS deployment.",
+        "Implemented CMG DataLab GraphQL Excel add-in enabling research model auto-population and automated refresh routines.",
+        "Partnered with finance stakeholders to productionize ML pipelines for forecasting and anomaly detection, improving research accuracy by 30%."
       ],
       tech: ["FastAPI", "React", "GraphQL", "PostgreSQL", "Azure", "Docker"]
     },
@@ -102,39 +102,54 @@ export const profile = {
       logoAlt: "Cogoport logo",
       site: "https://www.cogoport.com",
       achievements: [
-        "Implemented ML automation for freight data classification hitting 95% accuracy and saving 30+ analyst hours weekly",
-        "Automated ingestion of 1M+ shipment datapoints via Selenium pipelines",
-        "Integrated Outlook API for email parsing trimming manual workload by 60%",
-        "Enhanced backend services and admin dashboards for shipment communications"
+        "Automated freight data classification with Python, SQL, and FastAPI achieving 95% accuracy and reducing manual labelling by 30+ hours each week.",
+        "Built Selenium-based scraping pipelines ingesting 1M+ shipment datapoints for analytics and reporting.",
+        "Integrated Outlook API for automated email parsing, cutting manual triage by 60% for operations teams.",
+        "Enhanced backend services and dashboards supporting shipment communication workflows and SLA tracking."
       ],
       tech: ["Python", "Django", "Selenium", "PostgreSQL", "Azure Functions"]
+    },
+    {
+      company: "Cogoport",
+      role: "Machine Learning Engineer Intern",
+      period: "Sep 2021 – May 2022",
+      location: "Mumbai, India",
+      logo: "/assets/logos/cogoport-logo.svg",
+      logoAlt: "Cogoport logo",
+      site: "https://www.cogoport.com",
+      achievements: [
+        "Designed shipment delay prediction models using Python, scikit-learn, and Power BI, improving forecasting accuracy by 20%.",
+        "Created automated data extraction pipelines with BeautifulSoup, Selenium, and Azure Functions.",
+        "Developed Power BI dashboards for leadership teams to track KPIs and anomaly alerts."
+      ],
+      tech: ["Python", "scikit-learn", "Power BI", "Selenium", "Azure Functions"]
     }
   ],
   projects: [
     {
       title: "IPO/FO Return Prediction",
-      year: "2025",
+      year: "2023",
       description:
-        "Machine learning ensemble predicting T+1, T+7 and T+30 returns using sector momentum, macro indicators and fundamentals across 200+ IPO/FO deals.",
-      impact: "Powers AI-driven forecasts directly inside MIDAS.",
-      tags: ["Time Series", "Finance AI", "Ensemble Models"],
-      links: [{ label: "Case Study", href: "https://linkedin.com/in/dnrk-charan" }]
+        "Built ensemble ML models predicting T+1, T+7, and T+30 IPO/FO returns using sector momentum, macro indicators, and market depth across 200+ deals.",
+      impact: "Insights deployed inside MIDAS dashboards for advisor-driven analytics.",
+      tags: ["Time Series", "Finance", "Ensemble Models"],
+      links: []
     },
     {
       title: "Crypto Insights Platform",
-      year: "2024",
+      year: "2023",
       description:
-        "Full-stack analytics hub with screeners, watchlists, portfolio analytics, technical indicators and Excel add-ins.",
-      impact: "Serves 1K+ daily research queries with secure IIS deployment.",
-      tags: ["FastAPI", "React", "Redis", "IIS"],
-      links: [{ label: "Product Walkthrough", href: "https://github.com/dnrkcharan" }]
+        "Designed FastAPI, React, and Redis-based analytics platform covering screeners, watchlists, portfolio analytics, and technical indicators.",
+      impact: "Automated exchange and on-chain data ingestion with Excel add-ins and IIS deployment supporting 1K+ research queries.",
+      tags: ["FastAPI", "React", "Redis", "Automation"],
+      links: []
     },
     {
       title: "Email Classification System",
-      year: "2023",
+      year: "2022",
       description:
-        "FastAPI + Outlook automation pipeline sorting 100K+ shipment emails into actionable queues.",
-      impact: "Reduced manual operations workload by 60%.",
+        "Developed FastAPI and Outlook automation pipeline sorting 100K+ shipment emails into actionable queues.",
+      impact: "Applied NLP for intent detection reducing manual effort by 60%.",
       tags: ["NLP", "Automation", "FastAPI"],
       links: []
     },
@@ -142,8 +157,8 @@ export const profile = {
       title: "EV Smart Scheduling",
       year: "2022",
       description:
-        "Deep-learning powered load forecasting with GUI-driven EV charging orchestration.",
-      impact: "Cut distribution peak-load impact by 18% for pilot utility.",
+        "Built deep learning-based load forecasting model with dynamic pricing for EV charging stations.",
+      impact: "Implemented optimization algorithm coordinating scheduling under dynamic pricing.",
       tags: ["Deep Learning", "Energy", "Optimization"],
       links: []
     }
@@ -153,8 +168,8 @@ export const profile = {
       category: "Languages",
       items: [
         { name: "Python", level: 95 },
-        { name: "TypeScript", level: 85 },
-        { name: "SQL", level: 90 }
+        { name: "SQL", level: 90 },
+        { name: "TypeScript", level: 85 }
       ]
     },
     {
@@ -162,8 +177,8 @@ export const profile = {
       items: [
         { name: "FastAPI", level: 90 },
         { name: "React", level: 88 },
-        { name: "Django", level: 80 },
-        { name: "GraphQL", level: 75 }
+        { name: "Django", level: 82 },
+        { name: "Odoo", level: 70 }
       ]
     },
     {
@@ -172,16 +187,16 @@ export const profile = {
         { name: "Pandas", level: 92 },
         { name: "scikit-learn", level: 86 },
         { name: "NLP", level: 80 },
-        { name: "Data Analysis", level: 90 }
+        { name: "Forecasting", level: 88 }
       ]
     },
     {
       category: "Automation & DevOps",
       items: [
-        { name: "Selenium", level: 85 },
+        { name: "Azure", level: 85 },
         { name: "Docker", level: 82 },
-        { name: "CI/CD", level: 78 },
-        { name: "IIS", level: 75 }
+        { name: "Power BI", level: 80 },
+        { name: "Git", level: 78 }
       ]
     }
   ],
@@ -207,28 +222,28 @@ export const profile = {
     {
       title: "Machine Learning with Python",
       issuer: "IBM / Coursera",
-      description: "Feature engineering, supervised learning and deployment of real-world ML pipelines.",
+      description: "Coursera certification covering supervised learning, model evaluation, and deployment basics.",
       link: "https://coursera.org",
       image: "https://image.pollinations.ai/prompt/Futuristic%20certificate%20for%20Machine%20Learning%20with%20Python%20with%20neon%20data%20visualisations"
     },
     {
       title: "Python for Everybody Specialisation",
       issuer: "University of Michigan",
-      description: "Data structures, web access, databases and capstone project for full-stack Python.",
+      description: "Coursera specialisation on Python fundamentals, data access, databases, and capstone project.",
       link: "https://coursera.org",
       image: "https://image.pollinations.ai/prompt/Cyberpunk%20style%20certificate%20for%20Python%20programming%20with%20code%20streams"
     },
     {
       title: "Machine Learning with Python",
       issuer: "YHills",
-      description: "Hands-on ML lab building regression, classification and clustering projects.",
+      description: "Hands-on ML program building regression, classification, and clustering projects.",
       link: "https://yhills.com",
       image: "https://image.pollinations.ai/prompt/AI%20generated%20certificate%20for%20machine%20learning%20bootcamp%20with%20geometric%20neural%20networks"
     },
     {
       title: "Introduction to HTML5",
       issuer: "Coursera",
-      description: "Crafted responsive UI foundations with semantic HTML and accessibility best practices.",
+      description: "Course on semantic HTML and responsive design foundations.",
       link: "https://coursera.org",
       image: "https://image.pollinations.ai/prompt/Futuristic%20certificate%20for%20modern%20web%20design%20with%20glowing%20HTML%20icons"
     }
@@ -236,13 +251,13 @@ export const profile = {
   achievements: [
     {
       title: "HackerRank Gold Badges",
-      description: "Achieved gold-tier problem solving in Python and SQL, ranking amongst top global programmers.",
+      description: "Gold badge holder in Python and SQL on HackerRank.",
       image: "https://image.pollinations.ai/prompt/Golden%20digital%20badge%20for%20coding%20champion%20with%20Python%20and%20SQL%20symbols",
       link: "https://www.hackerrank.com/profile/dnrkcharan"
     },
     {
       title: "Math Quest 2019 – Runner-up",
-      description: "Secured 2nd place in a national-level quantitative analytics challenge solving dynamic optimisation puzzles.",
+      description: "Secured 2nd place in Math Quest 2019 quantitative competition.",
       image: "https://image.pollinations.ai/prompt/Futuristic%20trophy%20for%20mathematics%20competition%20with%20glowing%20equations",
       link: "https://nitandhra.ac.in"
     }

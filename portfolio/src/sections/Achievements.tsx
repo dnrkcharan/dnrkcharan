@@ -9,9 +9,9 @@ export const Achievements = () => {
         <div className="absolute -bottom-24 right-0 h-60 w-60 rounded-full bg-charan-accent/20 blur-3xl" />
         <div className="relative">
           <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Achievements</p>
-          <h2 className="mt-3 text-3xl font-bold text-white">Celebrating playful milestones</h2>
+          <h2 className="mt-3 text-3xl font-bold text-white">Key achievements</h2>
           <p className="mt-3 max-w-2xl text-white/70">
-            Each win hints at the experimentation, grit and storytelling that power my build cycles.
+            Highlights from competitive programming and academic recognition.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {profile.achievements.map((achievement, index) => (
@@ -34,7 +34,7 @@ export const Achievements = () => {
                   <h3 className="text-lg font-semibold text-white">{achievement.title}</h3>
                   <p className="text-sm text-white/75">{achievement.description}</p>
                   <span className="inline-flex items-center gap-2 text-sm font-semibold text-charan-accent transition group-hover:translate-x-1 group-hover:text-white">
-                    Peek details
+                    View details
                     <span className="h-1 w-6 bg-gradient-to-r from-charan-accent to-charan-secondary" />
                   </span>
                 </div>

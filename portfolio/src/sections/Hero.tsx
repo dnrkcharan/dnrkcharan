@@ -26,7 +26,7 @@ export const Hero = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-xs uppercase tracking-[0.4em] text-white/70"
             >
-              AI-first Engineer
+              Software Engineer
               <span className="flex h-2 w-2 animate-pulse rounded-full bg-charan-accent" />
             </motion.span>
 

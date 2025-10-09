@@ -8,9 +8,9 @@ export const Projects = () => {
       <div className="mb-10 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Projects</p>
-          <h2 className="mt-3 text-4xl font-bold text-white">AI innovations & intelligent platforms</h2>
+          <h2 className="mt-3 text-4xl font-bold text-white">Selected work</h2>
           <p className="mt-3 max-w-2xl text-white/70">
-            Purpose-built experiences blending ML, automation and delightful UX shipped across finance, crypto and logistics.
+            Representative projects spanning finance analytics, automation, and energy research.
           </p>
         </div>
       </div>

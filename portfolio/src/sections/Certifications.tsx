@@ -9,10 +9,9 @@ export const Certifications = () => {
         <div className="absolute -bottom-28 right-8 h-64 w-64 rounded-full bg-charan-primary/20 blur-3xl" />
         <div className="relative">
           <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Certifications</p>
-          <h2 className="mt-3 text-3xl font-bold text-white">Credibility in machine learning & engineering</h2>
+          <h2 className="mt-3 text-3xl font-bold text-white">Certifications</h2>
           <p className="mt-3 max-w-3xl text-white/70">
-            Click a card to open the certificate. Imagery is AI-generated for a vibrant, futuristic vibe — replace the links with
-            your official credentials when you're ready.
+            Click a card to open the certificate. Replace the placeholder links with your official credential URLs when ready.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {profile.certifications.map((cert, index) => (

@@ -5,12 +5,10 @@ export const Experience = () => {
   return (
     <section id="experience" className="section-container">
       <div className="mb-12 text-center">
-        <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Experience</p>
-        <h2 className="mt-3 text-4xl font-bold text-white">
-          Building intelligence across finance, logistics & automation
-        </h2>
+        <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">Work Experience</p>
+        <h2 className="mt-3 text-4xl font-bold text-white">Roles & responsibilities</h2>
         <p className="mt-3 text-white/70">
-          Leading engineering squads, shipping ML-driven features and unlocking operational leverage.
+          Snapshot of end-to-end engineering ownership across Golden Hills Capital and Cogoport.
         </p>
       </div>
       <div className="space-y-8">
@@ -69,10 +67,8 @@ export const Experience = () => {
                   </div>
                 </div>
                 <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs text-white/70">
-                  <span className="uppercase tracking-[0.3em] text-charan-accent">Impact snapshot</span>
-                  <p className="mt-2 text-sm text-white/75">
-                    {experience.achievements[0]}
-                  </p>
+                  <span className="uppercase tracking-[0.3em] text-charan-accent">Key highlight</span>
+                  <p className="mt-2 text-sm text-white/75">{experience.achievements[0]}</p>
                 </div>
               </div>
             </div>
