@@ -30,6 +30,31 @@ export const About = () => {
             >
               {typedText}
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.05 }}
+              className="rounded-[2.5rem] border border-charan-dark/10 bg-white/80 p-5 shadow-[0_16px_40px_rgba(6,2,18,0.08)] dark:border-white/10 dark:bg-white/5"
+            >
+              <div className="grid gap-4 sm:grid-cols-3">
+                {profile.aboutHighlights.map((highlight, index) => (
+                  <motion.div
+                    key={highlight.title}
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.45, delay: index * 0.08 }}
+                    className="rounded-3xl border border-charan-dark/5 bg-white/90 p-4 shadow-[0_12px_28px_rgba(5,2,15,0.1)] dark:border-white/10 dark:bg-white/5"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.35em] text-charan-accent">{`Focus ${index + 1}`}</p>
+                    <h3 className="mt-2 text-lg font-semibold text-charan-dark dark:text-white">{highlight.title}</h3>
+                    <p className="mt-2 text-sm text-charan-dark/70 dark:text-white/70">{highlight.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           </div>
 
           <div className="space-y-6">
@@ -59,24 +84,6 @@ export const About = () => {
             </motion.div>
           </div>
 
-          <div className="lg:col-span-2">
-            <div className="grid gap-4 md:grid-cols-3">
-              {profile.aboutHighlights.map((highlight, index) => (
-                <motion.div
-                  key={highlight.title}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className="rounded-3xl border border-charan-dark/10 bg-white/75 p-5 dark:border-white/10 dark:bg-white/5"
-                >
-                  <p className="text-[11px] uppercase tracking-[0.35em] text-charan-accent">{`Focus ${index + 1}`}</p>
-                  <h3 className="mt-2 text-lg font-semibold text-charan-dark dark:text-white">{highlight.title}</h3>
-                  <p className="mt-2 text-sm text-charan-dark/70 dark:text-white/70">{highlight.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
