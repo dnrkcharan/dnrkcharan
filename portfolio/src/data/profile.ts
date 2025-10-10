@@ -2,7 +2,7 @@ export const profile = {
   name: "Dasari Narada Rama Krishna Charan",
   nickname: "Charan",
   location: "Hyderabad, India",
-  tagline: "Turning Code into Intelligence",
+  tagline: "Software Engineer • AI-driven platforms",
   summary:
     "AI-native engineer who architects delightful intelligence for finance. I blend quant research, machine learning and product thinking to turn messy datasets into cinematic experiences for analysts and executives.",
   resumeUrl: "/assets/charan-resume.pdf",
@@ -84,12 +84,10 @@ export const profile = {
       logoAlt: "Golden Hills Capital logo",
       site: "https://goldenhills.in",
       achievements: [
-        "Built advanced equity screeners covering 1K+ securities across technical, fundamental and risk parameters, elevating analyst throughput by 40%",
-        "Optimized dynamic query builder and caching strategies reducing response latency by 40%",
-        "Designed real-time portfolio dashboards, P&L heatmaps and comparative analytics for market intelligence",
-        "Delivered crypto insights platform with FastAPI backend, Excel integrations and secure IIS deployment",
-        "Created Excel add-in for CMG DataLab GraphQL API enabling research model auto-population",
-        "Collaborated with finance teams to productionize ML pipelines and reporting tools"
+        "Lead engineer on MIDAS – Next-gen equity IPO, Follow-on, and research platform integrating ML models, dashboards, and risk analysis.",
+        "Built & deployed Crypto Insights Platform (screeners, news aggregation, portfolio tools) securely on IIS servers.",
+        "Developed advanced screeners, portfolio dashboards, and Excel add-ins for CMG DataLab GraphQL API.",
+        "Enhanced query-builder, reducing response time and improving analyst efficiency."
       ],
       tech: ["FastAPI", "React", "GraphQL", "PostgreSQL", "Azure", "Docker"]
     },
@@ -102,10 +100,10 @@ export const profile = {
       logoAlt: "Cogoport logo",
       site: "https://www.cogoport.com",
       achievements: [
-        "Implemented ML automation for freight data classification hitting 95% accuracy and saving 30+ analyst hours weekly",
-        "Automated ingestion of 1M+ shipment datapoints via Selenium pipelines",
-        "Integrated Outlook API for email parsing trimming manual workload by 60%",
-        "Enhanced backend services and admin dashboards for shipment communications"
+        "Spearheaded ML-based freight data automation, improving classification accuracy to 95% and saving 30+ analyst hours/week.",
+        "Automated ingestion of 1M+ datapoints via Selenium & cron.",
+        "Integrated Outlook API for automated email parsing, reducing workload by 60%.",
+        "Improved backend services and admin dashboard for shipment communications."
       ],
       tech: ["Python", "Django", "Selenium", "PostgreSQL", "Azure Functions"]
     }
@@ -113,28 +111,28 @@ export const profile = {
   projects: [
     {
       title: "IPO/FO Return Prediction",
-      year: "2025",
+      year: "2023",
       description:
-        "Machine learning ensemble predicting T+1, T+7 and T+30 returns using sector momentum, macro indicators and fundamentals across 200+ IPO/FO deals.",
-      impact: "Powers AI-driven forecasts directly inside MIDAS.",
-      tags: ["Time Series", "Finance AI", "Ensemble Models"],
-      links: [{ label: "Case Study", href: "https://linkedin.com/in/dnrk-charan" }]
+        "Built ensemble ML models predicting T+1, T+7, and T+30 IPO/FO returns using sector momentum, macro indicators, and market depth across 200+ deals.",
+      impact: "Insights deployed inside MIDAS dashboards for advisor-driven analytics.",
+      tags: ["Time Series", "Finance", "Ensemble Models"],
+      links: []
     },
     {
       title: "Crypto Insights Platform",
-      year: "2024",
+      year: "2023",
       description:
-        "Full-stack analytics hub with screeners, watchlists, portfolio analytics, technical indicators and Excel add-ins.",
-      impact: "Serves 1K+ daily research queries with secure IIS deployment.",
-      tags: ["FastAPI", "React", "Redis", "IIS"],
-      links: [{ label: "Product Walkthrough", href: "https://github.com/dnrkcharan" }]
+        "Designed FastAPI, React, and Redis-based analytics platform covering screeners, watchlists, portfolio analytics, and technical indicators.",
+      impact: "Automated exchange and on-chain data ingestion with Excel add-ins and IIS deployment supporting 1K+ research queries.",
+      tags: ["FastAPI", "React", "Redis", "Automation"],
+      links: []
     },
     {
       title: "Email Classification System",
-      year: "2023",
+      year: "2022",
       description:
-        "FastAPI + Outlook automation pipeline sorting 100K+ shipment emails into actionable queues.",
-      impact: "Reduced manual operations workload by 60%.",
+        "Developed FastAPI and Outlook automation pipeline sorting 100K+ shipment emails into actionable queues.",
+      impact: "Applied NLP for intent detection reducing manual effort by 60%.",
       tags: ["NLP", "Automation", "FastAPI"],
       links: []
     },
@@ -142,8 +140,8 @@ export const profile = {
       title: "EV Smart Scheduling",
       year: "2022",
       description:
-        "Deep-learning powered load forecasting with GUI-driven EV charging orchestration.",
-      impact: "Cut distribution peak-load impact by 18% for pilot utility.",
+        "Built deep learning-based load forecasting model with dynamic pricing for EV charging stations.",
+      impact: "Implemented optimization algorithm coordinating scheduling under dynamic pricing.",
       tags: ["Deep Learning", "Energy", "Optimization"],
       links: []
     }
@@ -153,8 +151,8 @@ export const profile = {
       category: "Languages",
       items: [
         { name: "Python", level: 95 },
-        { name: "TypeScript", level: 85 },
-        { name: "SQL", level: 90 }
+        { name: "SQL", level: 90 },
+        { name: "TypeScript", level: 85 }
       ]
     },
     {
@@ -162,8 +160,8 @@ export const profile = {
       items: [
         { name: "FastAPI", level: 90 },
         { name: "React", level: 88 },
-        { name: "Django", level: 80 },
-        { name: "GraphQL", level: 75 }
+        { name: "Django", level: 82 },
+        { name: "Odoo", level: 70 }
       ]
     },
     {
@@ -172,16 +170,16 @@ export const profile = {
         { name: "Pandas", level: 92 },
         { name: "scikit-learn", level: 86 },
         { name: "NLP", level: 80 },
-        { name: "Data Analysis", level: 90 }
+        { name: "Forecasting", level: 88 }
       ]
     },
     {
       category: "Automation & DevOps",
       items: [
-        { name: "Selenium", level: 85 },
+        { name: "Azure", level: 85 },
         { name: "Docker", level: 82 },
-        { name: "CI/CD", level: 78 },
-        { name: "IIS", level: 75 }
+        { name: "Power BI", level: 80 },
+        { name: "Git", level: 78 }
       ]
     }
   ],
@@ -190,13 +188,17 @@ export const profile = {
       school: "Scaler",
       program: "Data Science & Machine Learning Program",
       period: "2024 – Present",
-      details: "Advanced curriculum covering Python, EDA, ML/DL, NLP, RAG, LLM Ops and deployment."
+      details: "Advanced curriculum covering Python, EDA, ML/DL, NLP, RAG, LLM Ops and deployment.",
+      logo: "/assets/logos/scaler-logo.svg",
+      logoAlt: "Scaler logo"
     },
     {
       school: "National Institute of Technology, Andhra Pradesh",
       program: "B.Tech • Electrical & Electronics Engineering",
       period: "2018 – 2022",
-      details: "CGPA 7.09/10 • MathQuest 2019 Runner-up"
+      details: "CGPA 7.09/10 • MathQuest 2019 Runner-up",
+      logo: "/assets/logos/nitap-logo.svg",
+      logoAlt: "NIT Andhra Pradesh logo"
     }
   ],
   certifications: [

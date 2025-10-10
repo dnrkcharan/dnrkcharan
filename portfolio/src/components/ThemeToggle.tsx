@@ -8,7 +8,7 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative flex h-10 w-16 items-center rounded-full border border-white/20 bg-white/10 px-1 py-1 text-white/70 shadow-inner-glow transition hover:border-white/40 hover:bg-white/20"
+      className="relative flex h-10 w-16 items-center rounded-full border border-charan-dark/15 bg-white px-1 py-1 text-charan-dark/70 shadow-inner-glow transition hover:border-charan-primary/40 hover:text-charan-primary dark:border-white/20 dark:bg-white/10 dark:text-white/70 dark:hover:border-white/40 dark:hover:bg-white/20"
       aria-label="Toggle theme"
     >
       <motion.span

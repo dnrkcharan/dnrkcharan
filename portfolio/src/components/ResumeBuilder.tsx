@@ -56,14 +56,14 @@ export const ResumeBuilder = () => {
   return (
     <section id="resume" className="section-container">
       <div className="glass-panel relative overflow-hidden">
-        <div className="absolute -right-32 -top-32 h-64 w-64 rounded-full bg-charan-accent/20 blur-3xl" aria-hidden />
+        <div className="absolute -right-32 -top-32 hidden h-64 w-64 rounded-full bg-charan-accent/20 blur-3xl dark:block" aria-hidden />
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-xl">
             <p className="text-xs uppercase tracking-[0.4em] text-charan-accent">AI-native Resume</p>
-            <h2 className="mt-2 text-3xl font-bold text-white lg:text-4xl">
+            <h2 className="mt-2 text-3xl font-bold text-charan-dark dark:text-white lg:text-4xl">
               Dynamic Resume Builder <span className="gradient-text">powered by structured data</span>
             </h2>
-            <p className="mt-4 text-white/80">
+            <p className="mt-4 text-charan-dark/70 dark:text-white/80">
               Export a JSON snapshot of Charan&apos;s journey tailored to the sections you need. Perfect for AI agents, recruiters and
               rapid LinkedIn updates.
             </p>
@@ -77,8 +77,8 @@ export const ResumeBuilder = () => {
                     onClick={() => toggleSection(key)}
                     className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
                       active
-                        ? "border-charan-accent/80 bg-charan-accent/20 text-white"
-                        : "border-white/10 bg-white/5 text-white/70 hover:text-white"
+                        ? "border-charan-accent/70 bg-charan-accent/20 text-charan-dark dark:text-white"
+                        : "border-charan-dark/15 bg-white/70 text-charan-dark/70 hover:text-charan-primary dark:border-white/10 dark:bg-white/5 dark:text-white/70 dark:hover:text-white"
                     }`}
                   >
                     <Layers className="mr-2 inline-block h-4 w-4" />
