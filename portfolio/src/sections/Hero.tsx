@@ -14,7 +14,7 @@ const heroVariants = {
 export const Hero = () => {
   return (
     <section id="hero" className="section-container pt-28 lg:pt-36">
-      <div className="relative overflow-hidden rounded-[3rem] border border-[#c1c8ff]/50 bg-gradient-to-br from-white via-[#e2e6ff] to-[#c9d1ff] p-8 shadow-[0_34px_95px_rgba(18,16,70,0.2)] backdrop-blur-2xl dark:border-white/10 dark:bg-gradient-to-br dark:from-white/5 dark:via-charan-dark/70 dark:to-charan-dark/90 lg:p-12">
+      <div className="relative overflow-hidden rounded-[3rem] border border-[#c1c8ff]/50 bg-gradient-to-br from-[#eef1ff] via-[#c7cffd] to-[#96a4ff] p-8 shadow-[0_34px_95px_rgba(18,16,70,0.2)] backdrop-blur-2xl dark:border-white/10 dark:bg-gradient-to-br dark:from-white/5 dark:via-charan-dark/70 dark:to-charan-dark/90 lg:p-12">
         <div className="absolute -top-32 -left-16 hidden h-72 w-72 rounded-full bg-charan-primary/30 blur-3xl dark:block" />
         <div className="absolute -bottom-40 -right-16 hidden h-96 w-96 rounded-full bg-charan-secondary/20 blur-3xl dark:block" />
 
@@ -119,13 +119,13 @@ export const Hero = () => {
             className="relative flex justify-center"
           >
             <div className="relative w-full max-w-[420px] space-y-6">
-              <div className="relative overflow-hidden rounded-[3rem] border border-white/60 bg-gradient-to-br from-white via-[#ecf0ff] to-[#d6ddff] p-4 shadow-[0_28px_70px_rgba(18,16,70,0.18)] dark:border-white/15 dark:bg-charan-dark/60 dark:shadow-[0_25px_60px_rgba(5,1,10,0.45)]">
-                <div className="rounded-[2.5rem] border border-white/60 bg-gradient-to-br from-white via-[#f2f4ff] to-[#dce2ff] p-4 dark:border-white/10 dark:bg-gradient-to-br dark:from-white/5 dark:via-charan-dark/60 dark:to-charan-dark/80">
-                  <div className="overflow-hidden rounded-[2rem] border border-white/60 bg-gradient-to-br from-white via-[#eef2ff] to-[#d7defd] dark:border-white/10 dark:bg-charan-dark/70">
+              <div className="relative overflow-hidden rounded-[3rem] border border-white/60 bg-gradient-to-br from-[#e7ebff] via-[#c1c9ff] to-[#8f9cff] p-4 shadow-[0_28px_70px_rgba(18,16,70,0.18)] dark:border-white/15 dark:bg-charan-dark/60 dark:shadow-[0_25px_60px_rgba(5,1,10,0.45)]">
+                <div className="rounded-[2.5rem] border border-white/60 bg-gradient-to-br from-[#f0f2ff] via-[#cdd4ff] to-[#9eaaff] p-4 dark:border-white/10 dark:bg-gradient-to-br dark:from-white/5 dark:via-charan-dark/60 dark:to-charan-dark/80">
+                  <div className="overflow-hidden rounded-[2rem] border border-white/60 bg-gradient-to-br from-[#f2f4ff] via-[#cfd6ff] to-[#a4b0ff] dark:border-white/10 dark:bg-charan-dark/70">
                     <img src={profile.photo.src} alt={profile.photo.alt} className="h-full w-full object-cover" />
                   </div>
                 </div>
-                <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/60 bg-gradient-to-r from-white via-[#eff2ff] to-[#d9e0ff] px-4 py-3 text-xs text-charan-dark/70 shadow-[0_12px_32px_rgba(18,16,70,0.14)] dark:border-white/10 dark:bg-white/5 dark:text-white/70">
+                <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/60 bg-gradient-to-r from-[#f0f2ff] via-[#cdd3ff] to-[#a4afff] px-4 py-3 text-xs text-charan-dark/70 shadow-[0_12px_32px_rgba(18,16,70,0.14)] dark:border-white/10 dark:bg-white/5 dark:text-white/70">
                   <span>{profile.photo.caption}</span>
                   <span className="text-[10px] uppercase tracking-[0.4em] text-charan-accent">AI-native</span>
                 </div>
@@ -139,7 +139,7 @@ export const Hero = () => {
                     initial="hidden"
                     animate="visible"
                     variants={heroVariants}
-                    className="rounded-2xl border border-white/60 bg-gradient-to-br from-white via-[#eef1ff] to-[#dce1ff] p-4 text-left shadow-[0_16px_38px_rgba(18,16,70,0.14)] dark:border-white/10 dark:bg-charan-dark/60 dark:text-white"
+                    className="rounded-2xl border border-white/60 bg-gradient-to-br from-[#eef1ff] via-[#c6ceff] to-[#9da9ff] p-4 text-left shadow-[0_16px_38px_rgba(18,16,70,0.14)] dark:border-white/10 dark:bg-charan-dark/60 dark:text-white"
                   >
                     <p className="text-[10px] uppercase tracking-[0.4em] text-charan-accent">{highlight.accent}</p>
                     <p className="mt-2 text-sm font-semibold text-charan-dark dark:text-white">{highlight.title}</p>
