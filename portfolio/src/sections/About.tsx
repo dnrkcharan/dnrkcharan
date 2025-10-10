@@ -30,23 +30,6 @@ export const About = () => {
             >
               {typedText}
             </motion.p>
-
-            <div className="flex flex-col gap-4 md:flex-row">
-              {profile.aboutHighlights.map((highlight, index) => (
-                <motion.div
-                  key={highlight.title}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className="flex-1 rounded-3xl border border-charan-dark/10 bg-white/75 p-5 dark:border-white/10 dark:bg-white/5"
-                >
-                  <p className="text-[11px] uppercase tracking-[0.35em] text-charan-accent">{`Focus ${index + 1}`}</p>
-                  <h3 className="mt-2 text-lg font-semibold text-charan-dark dark:text-white">{highlight.title}</h3>
-                  <p className="mt-2 text-sm text-charan-dark/70 dark:text-white/70">{highlight.description}</p>
-                </motion.div>
-              ))}
-            </div>
           </div>
 
           <div className="space-y-6">
@@ -74,6 +57,25 @@ export const About = () => {
               <p className="text-sm uppercase tracking-[0.3em] text-charan-dark/50 dark:text-white/50">Currently learning</p>
               <p className="mt-3 text-base text-charan-dark/70 dark:text-white/80">{profile.aboutCuriosity}</p>
             </motion.div>
+          </div>
+
+          <div className="lg:col-span-2">
+            <div className="grid gap-4 md:grid-cols-3">
+              {profile.aboutHighlights.map((highlight, index) => (
+                <motion.div
+                  key={highlight.title}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.08 }}
+                  className="rounded-3xl border border-charan-dark/10 bg-white/75 p-5 dark:border-white/10 dark:bg-white/5"
+                >
+                  <p className="text-[11px] uppercase tracking-[0.35em] text-charan-accent">{`Focus ${index + 1}`}</p>
+                  <h3 className="mt-2 text-lg font-semibold text-charan-dark dark:text-white">{highlight.title}</h3>
+                  <p className="mt-2 text-sm text-charan-dark/70 dark:text-white/70">{highlight.description}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
