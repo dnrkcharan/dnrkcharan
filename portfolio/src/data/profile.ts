@@ -4,14 +4,14 @@ export const profile = {
   location: "Hyderabad, India",
   tagline: "Software Engineer • AI-driven platforms",
   summary:
-    "Software Engineer with 3+ years delivering MIDAS equity research workflows at Golden Hills Capital and ML-powered automation at Cogoport across FastAPI, Django, React, and Python.",
+    "AI-native engineer who architects delightful intelligence for finance. I blend quant research, machine learning and product thinking to turn messy datasets into cinematic experiences for analysts and executives.",
   resumeUrl: "/assets/charan-resume.pdf",
   photo: {
     src: "/assets/charan-headshot.svg",
     alt: "Stylised portrait of Dasari Narada Rama Krishna Charan in a blazer",
-    caption: "Software engineer delivering ML-driven analytics"
+    caption: "AI-first engineer turning data into decisive stories"
   },
-  focusAreas: ["Equity Platforms", "ML Automation", "Full-stack Delivery"],
+  focusAreas: ["AI/ML", "Full-stack", "Data Science"],
   socials: [
     { label: "LinkedIn", href: "https://linkedin.com/in/dnrk-charan" },
     { label: "GitHub", href: "https://github.com/dnrkcharan" },
@@ -20,58 +20,58 @@ export const profile = {
   heroHighlights: [
     {
       title: "3+ years",
-      description: "Full-stack and machine learning experience",
+      description: "Designing AI-first systems for research desks & trading ops",
       accent: "Experience"
     },
     {
-      title: "1K+ securities",
-      description: "Equity research coverage automated in MIDAS",
-      accent: "Coverage"
+      title: "200M+ datapoints",
+      description: "Pipelines orchestrated across equities, derivatives & crypto",
+      accent: "Data"
     },
     {
-      title: "95% accuracy",
-      description: "ML-powered freight data classification at Cogoport",
+      title: "5x efficiency",
+      description: "Automation boosts across IPO analytics & logistics intelligence",
       accent: "Impact"
     }
   ],
   aboutIntro:
-    "Lead engineer on MIDAS at Golden Hills Capital, building equity IPO and research platforms that blend FastAPI, Django, React, and SQL dashboards.",
+    "I craft AI experiences that feel more like co-pilots than dashboards — weaving financial data, automation and narrative design together.",
   aboutStory:
-    "Previously at Cogoport, drove ML automation for freight data, Selenium ingestion, and Outlook parsing that removed 30+ analyst hours every week.",
+    "From IPO prediction models to crypto intelligence and EV charging optimisers, I obsess over compressing complex analysis into playful, insight-rich surfaces. Pairing FastAPI, TypeScript and graph analytics with a storyteller's heart lets me translate noisy data into crisp, actionable adventures.",
   aboutCuriosity:
-    "Currently pursuing Scaler's Data Science & Machine Learning Program to sharpen advanced ML, NLP, RAG, and deployment skills.",
+    "Powered by filter coffee, neo-jazz playlists and a curiosity for how humans collaborate with machines.",
   aboutHighlights: [
     {
-      title: "MIDAS equity workflows",
+      title: "Narrative-first engineer",
       description:
-        "Lead engineer on MIDAS – Next-gen equity IPO, Follow-on, and research platform integrating ML models, dashboards, and risk analysis."
+        "Stitch data, design and ML together so decision makers feel like they're using a sci-fi console."
     },
     {
-      title: "Crypto insights platform",
+      title: "Financial systems whisperer",
       description:
-        "Built & deployed Crypto Insights Platform (screeners, news aggregation, portfolio tools) securely on IIS servers."
+        "Architect research platforms that fuse quant screens, P&L analytics and auto-reporting into one seamless loop."
     },
     {
-      title: "Automation wins",
+      title: "Automation artist",
       description:
-        "Developed advanced screeners, portfolio dashboards, Excel add-ins, and Outlook automations reducing manual effort."
+        "Dream up bots, Excel add-ins and workflows that free teams from repetitive toil and spark creative analysis."
     }
   ],
   aboutStats: [
     {
       value: "3+",
-      label: "Years in software engineering",
-      subtext: "Golden Hills Capital • Cogoport"
+      label: "Years shipping AI experiences",
+      subtext: "Finance, logistics, energy & analytics"
     },
     {
-      value: "40%",
-      label: "Faster analyst turnaround",
-      subtext: "Via MIDAS screeners and dashboards"
+      value: "200M+",
+      label: "Data points orchestrated",
+      subtext: "Across equities, derivatives & freight"
     },
     {
-      value: "95%",
-      label: "Classification accuracy",
-      subtext: "Freight data automation at Cogoport"
+      value: "10+",
+      label: "Production ML pipelines",
+      subtext: "Forecasting, NLP, anomaly detection"
     }
   ],
   experiences: [
@@ -205,28 +205,28 @@ export const profile = {
     {
       title: "Machine Learning with Python",
       issuer: "IBM / Coursera",
-      description: "Coursera certification covering supervised learning, model evaluation, and deployment basics.",
+      description: "Feature engineering, supervised learning and deployment of real-world ML pipelines.",
       link: "https://coursera.org",
       image: "https://image.pollinations.ai/prompt/Futuristic%20certificate%20for%20Machine%20Learning%20with%20Python%20with%20neon%20data%20visualisations"
     },
     {
       title: "Python for Everybody Specialisation",
       issuer: "University of Michigan",
-      description: "Coursera specialisation on Python fundamentals, data access, databases, and capstone project.",
+      description: "Data structures, web access, databases and capstone project for full-stack Python.",
       link: "https://coursera.org",
       image: "https://image.pollinations.ai/prompt/Cyberpunk%20style%20certificate%20for%20Python%20programming%20with%20code%20streams"
     },
     {
       title: "Machine Learning with Python",
       issuer: "YHills",
-      description: "Hands-on ML program building regression, classification, and clustering projects.",
+      description: "Hands-on ML lab building regression, classification and clustering projects.",
       link: "https://yhills.com",
       image: "https://image.pollinations.ai/prompt/AI%20generated%20certificate%20for%20machine%20learning%20bootcamp%20with%20geometric%20neural%20networks"
     },
     {
       title: "Introduction to HTML5",
       issuer: "Coursera",
-      description: "Course on semantic HTML and responsive design foundations.",
+      description: "Crafted responsive UI foundations with semantic HTML and accessibility best practices.",
       link: "https://coursera.org",
       image: "https://image.pollinations.ai/prompt/Futuristic%20certificate%20for%20modern%20web%20design%20with%20glowing%20HTML%20icons"
     }
@@ -234,13 +234,13 @@ export const profile = {
   achievements: [
     {
       title: "HackerRank Gold Badges",
-      description: "Gold badge holder in Python and SQL on HackerRank.",
+      description: "Achieved gold-tier problem solving in Python and SQL, ranking amongst top global programmers.",
       image: "https://image.pollinations.ai/prompt/Golden%20digital%20badge%20for%20coding%20champion%20with%20Python%20and%20SQL%20symbols",
       link: "https://www.hackerrank.com/profile/dnrkcharan"
     },
     {
       title: "Math Quest 2019 – Runner-up",
-      description: "Secured 2nd place in Math Quest 2019 quantitative competition.",
+      description: "Secured 2nd place in a national-level quantitative analytics challenge solving dynamic optimisation puzzles.",
       image: "https://image.pollinations.ai/prompt/Futuristic%20trophy%20for%20mathematics%20competition%20with%20glowing%20equations",
       link: "https://nitandhra.ac.in"
     }

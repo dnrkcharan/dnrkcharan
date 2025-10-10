@@ -25,25 +25,25 @@ export const Experience = () => {
               <div className="space-y-5">
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-charan-dark/10 bg-white/80 dark:border-white/10 dark:bg-white/10">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10">
                       <img src={experience.logo} alt={experience.logoAlt} className="h-12 w-12 object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-semibold text-charan-dark dark:text-white">{experience.role}</h3>
+                      <h3 className="text-2xl font-semibold text-white">{experience.role}</h3>
                       <a
                         href={experience.site}
-                        className="text-sm text-charan-accent transition hover:text-charan-primary/80 dark:hover:text-white"
+                        className="text-sm text-charan-accent transition hover:text-white"
                       >
                         {experience.company}
                       </a>
                     </div>
                   </div>
-                  <div className="text-right text-xs uppercase tracking-[0.35em] text-charan-dark/50 dark:text-white/50">
+                  <div className="text-right text-xs uppercase tracking-[0.35em] text-white/50">
                     <p>{experience.period}</p>
-                    <p className="mt-1 text-charan-dark/60 dark:text-white/60">{experience.location}</p>
+                    <p className="mt-1 text-white/60">{experience.location}</p>
                   </div>
                 </div>
-                <ul className="grid gap-3 text-sm text-charan-dark/75 dark:text-white/80">
+                <ul className="grid gap-3 text-sm text-white/80">
                   {experience.achievements.map((achievement) => (
                     <li key={achievement} className="flex gap-3">
                       <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-charan-accent" />
@@ -52,23 +52,25 @@ export const Experience = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex h-full flex-col justify-between rounded-3xl border border-charan-dark/10 bg-white/70 p-6 dark:border-white/10 dark:bg-charan-dark/50">
+              <div className="flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-charan-dark/50 p-6">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.4em] text-charan-dark/50 dark:text-white/50">Stack Arsenal</p>
-                  <div className="mt-4 flex flex-wrap gap-3 text-sm text-charan-dark/70 dark:text-white/80">
+                  <p className="text-xs uppercase tracking-[0.4em] text-white/50">Stack Arsenal</p>
+                  <div className="mt-4 flex flex-wrap gap-3 text-sm text-white/80">
                     {experience.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="rounded-full border border-charan-dark/10 bg-white/80 px-4 py-2 dark:border-white/10 dark:bg-white/10"
+                        className="rounded-full border border-white/10 bg-white/10 px-4 py-2"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="mt-6 rounded-2xl border border-charan-dark/10 bg-white/80 px-4 py-3 text-xs text-charan-dark/70 dark:border-white/10 dark:bg-white/10 dark:text-white/70">
-                  <span className="uppercase tracking-[0.3em] text-charan-accent">Key highlight</span>
-                  <p className="mt-2 text-sm text-charan-dark/70 dark:text-white/75">{experience.achievements[0]}</p>
+                <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs text-white/70">
+                  <span className="uppercase tracking-[0.3em] text-charan-accent">Impact snapshot</span>
+                  <p className="mt-2 text-sm text-white/75">
+                    {experience.achievements[0]}
+                  </p>
                 </div>
               </div>
             </div>
