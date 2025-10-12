@@ -25,7 +25,12 @@ export const Certifications = () => {
                 className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img src={cert.image} alt={`${cert.title} artwork`} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <img
+                    src={cert.image}
+                    alt={`${cert.title} artwork`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-charan-dark/80 via-charan-dark/20 to-transparent" />
                   <span className="absolute left-5 top-5 rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/80">
                     {`0${index + 1}`}

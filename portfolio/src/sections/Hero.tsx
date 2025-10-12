@@ -123,7 +123,12 @@ export const Hero = () => {
               <div className="relative overflow-hidden rounded-[3rem] border border-white/15 bg-charan-dark/60 p-4 shadow-2xl backdrop-blur">
                 <div className="rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-white/5 via-charan-dark/60 to-charan-dark/80 p-4">
                   <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-charan-dark/70">
-                    <img src={profile.photo.src} alt={profile.photo.alt} className="h-full w-full object-cover" />
+                    <img
+                      src={profile.photo.src}
+                      alt={profile.photo.alt}
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs text-white/70">

@@ -1,20 +1,37 @@
-import { useEffect, useMemo } from "react";
+import { Suspense, lazy, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Toaster } from "react-hot-toast";
 import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
 import { Experience } from "./sections/Experience";
-import { Projects } from "./sections/Projects";
-import { Skills } from "./sections/Skills";
-import { Education } from "./sections/Education";
-import { Certifications } from "./sections/Certifications";
-import { Achievements } from "./sections/Achievements";
-import { Contact } from "./sections/Contact";
 import { FloatingNav } from "./components/FloatingNav";
 import { NeuralBackground } from "./components/NeuralBackground";
-import { AiChatbot } from "./components/AiChatbot";
-import { ResumeBuilder } from "./components/ResumeBuilder";
 import { useTheme } from "./context/ThemeContext";
+
+const ProjectsSection = lazy(() =>
+  import("./sections/Projects").then(({ Projects }) => ({ default: Projects }))
+);
+const SkillsSection = lazy(() =>
+  import("./sections/Skills").then(({ Skills }) => ({ default: Skills }))
+);
+const EducationSection = lazy(() =>
+  import("./sections/Education").then(({ Education }) => ({ default: Education }))
+);
+const CertificationsSection = lazy(() =>
+  import("./sections/Certifications").then(({ Certifications }) => ({ default: Certifications }))
+);
+const AchievementsSection = lazy(() =>
+  import("./sections/Achievements").then(({ Achievements }) => ({ default: Achievements }))
+);
+const ResumeBuilderSection = lazy(() =>
+  import("./components/ResumeBuilder").then(({ ResumeBuilder }) => ({ default: ResumeBuilder }))
+);
+const ContactSection = lazy(() =>
+  import("./sections/Contact").then(({ Contact }) => ({ default: Contact }))
+);
+const AiChatbotWidget = lazy(() =>
+  import("./components/AiChatbot").then(({ AiChatbot }) => ({ default: AiChatbot }))
+);
 
 const sections = [
   { id: "hero", label: "Home" },
@@ -30,6 +47,8 @@ const sections = [
 
 const App = () => {
   const { theme } = useTheme();
+  const [deferSections, setDeferSections] = useState(false);
+  const [showChatbot, setShowChatbot] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -61,6 +80,33 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const activate = () => {
+      setDeferSections(true);
+      setShowChatbot(true);
+    };
+
+    if (typeof window !== "undefined") {
+      if ("requestIdleCallback" in window) {
+        const idleId = (window as typeof window & {
+          requestIdleCallback: (callback: IdleRequestCallback) => number;
+          cancelIdleCallback?: (handle: number) => void;
+        }).requestIdleCallback(() => activate());
+
+        return () => {
+          (window as typeof window & {
+            cancelIdleCallback?: (handle: number) => void;
+          }).cancelIdleCallback?.(idleId);
+        };
+      }
+
+      const timeoutId = window.setTimeout(activate, 150);
+      return () => window.clearTimeout(timeoutId);
+    }
+
+    return () => undefined;
+  }, []);
+
   const containerClass = useMemo(
     () =>
       `relative min-h-screen overflow-x-hidden transition-colors duration-500 ${
@@ -84,16 +130,24 @@ const App = () => {
           <Hero />
           <About />
           <Experience />
-          <Projects />
-          <Skills />
-          <Education />
-          <Certifications />
-          <Achievements />
-          <ResumeBuilder />
-          <Contact />
+          {deferSections && (
+            <Suspense fallback={null}>
+              <ProjectsSection />
+              <SkillsSection />
+              <EducationSection />
+              <CertificationsSection />
+              <AchievementsSection />
+              <ResumeBuilderSection />
+              <ContactSection />
+            </Suspense>
+          )}
         </motion.main>
       </AnimatePresence>
-      <AiChatbot />
+      {showChatbot && (
+        <Suspense fallback={null}>
+          <AiChatbotWidget />
+        </Suspense>
+      )}
       <Toaster position="top-right" />
     </div>
   );

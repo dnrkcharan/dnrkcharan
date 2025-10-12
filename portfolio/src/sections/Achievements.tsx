@@ -24,7 +24,12 @@ export const Achievements = () => {
                 className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5"
               >
                 <div className="relative h-44 overflow-hidden">
-                  <img src={achievement.image} alt={`${achievement.title} artwork`} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <img
+                    src={achievement.image}
+                    alt={`${achievement.title} artwork`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-charan-dark/80 via-charan-dark/30 to-transparent" />
                   <span className="absolute right-5 top-5 text-xs uppercase tracking-[0.3em] text-white/80">
                     {`Achievement 0${index + 1}`}
