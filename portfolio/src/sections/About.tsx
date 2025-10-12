@@ -77,7 +77,12 @@ export const About = () => {
                 >
                   <div className="flex items-center gap-4">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10">
-                      <img src={experience.logo} alt={experience.logoAlt} className="h-10 w-10 object-contain" />
+                      <img
+                        src={experience.logo}
+                        alt={experience.logoAlt}
+                        loading="lazy"
+                        className="h-10 w-10 object-contain"
+                      />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.3em] text-white/50">{experience.period}</p>

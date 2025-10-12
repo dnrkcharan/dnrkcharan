@@ -26,7 +26,12 @@ export const Experience = () => {
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
                     <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10">
-                      <img src={experience.logo} alt={experience.logoAlt} className="h-12 w-12 object-contain" />
+                      <img
+                        src={experience.logo}
+                        alt={experience.logoAlt}
+                        loading="lazy"
+                        className="h-12 w-12 object-contain"
+                      />
                     </div>
                     <div>
                       <h3 className="text-2xl font-semibold text-white">{experience.role}</h3>
